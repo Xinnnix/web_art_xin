@@ -1,0 +1,19 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f401;
+
+    
+}
+body{ background-color: red;}
+div{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: green;
+    display: inline;
+}
+h1{font-size: 300px;
+color: ivory;}
+
+#2333{font-family: 'Times New Roman', Times, serif;
+color: ivory;
+}
