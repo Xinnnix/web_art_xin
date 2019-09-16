@@ -1,7 +1,5 @@
-h1{
-    background-color: aquamarine;
-    display: inline;
-    color: violet;
-    font-size: 100px;
-
+p{
+    font-size: 60px;
+    color: burlywood;
+    background-color: indianred;
 }

@@ -1,0 +1,24 @@
+h1{
+    background-color: aquamarine;
+    display: inline;
+    color: violet;
+    font-size: 100px;
+
+}
+
+p{
+    display: inline;
+    color: ivory;
+    font-size: 50px;
+    background-color: pink;
+    
+
+}
+
+body{
+    
+    background-image: url("https://d1v7jayx2s9clc.cloudfront.net/user/pages/42.386-dx/1.26b%20alt%20Alexei%20Shulgin%20386dx_386_03.jpg");
+    background-size: 100%;
+
+
+}

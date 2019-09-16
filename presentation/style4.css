@@ -1,0 +1,26 @@
+h1{
+    background-color: aquamarine;
+    display: inline;
+    color: violet;
+    font-size: 100px;
+
+}
+
+p{
+    display: inline;
+    color: ivory;
+    font-size: 50px;
+    background-color: pink;
+    
+
+}
+
+body{
+    
+    background-image: url("https://d1v7jayx2s9clc.cloudfront.net/user/pages/out_4_pizza/disulpitch_block.jpg");
+    background-size: 150%;
+    background-position: center;
+    
+
+
+}
