@@ -1,0 +1,22 @@
+.box{
+    width: 800px;
+    height: 400px;
+    background-color: red;
+}
+
+#green-box{
+    width: 800px;
+    height: 400px;
+    background-color: green;
+    margin: 20px;
+}
+
+a{
+    /* display: block; */
+    background-color: pink;
+
+}
+
+p{
+    display: inline-block;
+}
