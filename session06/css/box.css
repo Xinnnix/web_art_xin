@@ -46,9 +46,10 @@
     width: 20%;
     background-color: beige;
     margin:5%;
-    top: 40%;
-    left: 10%;
     position: relative;
+    float: left;
+    top: 40%;
+    left: 5%;
 
 }
 
