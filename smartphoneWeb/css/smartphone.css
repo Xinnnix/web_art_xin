@@ -1,5 +1,6 @@
 body{
     background-color: beige;
+    background-image: url("https://cdn1.thr.com/sites/default/files/2019/05/final.png")
 }
 
 
@@ -9,7 +10,10 @@ body{
     background-color:rgb(251, 189, 253);
     margin:120px auto;
     border-radius: 3%;
+    transition-delay: 2s;
 }
+
+.screen:hover{transform: scale(0.1)}
 
 .row1{
     position: relative;
@@ -122,4 +126,72 @@ body{
 .b10{
     font-family: 'Courier New', Courier, monospace;
     font-size:3.5px;
+}
+
+.b11{
+    background-image: url("https://cdn.ebaumsworld.com/mediaFiles/picture/1035099/85708057.jpg");
+    background-size: 100%;
+}
+
+.b12{
+    text-align: center;
+    font-size:5px;
+    vertical-align: middle;
+    line-height: 45px;
+    display: inline;
+    background-color: rgb(226, 226, 208);
+    transition: 1s;
+}
+
+.b12:hover{
+    transform: scale(20);
+}
+
+.b13{
+    background-image: url("https://pics.me.me/when-you-find-a-random-picture-of-spongebob-and-call-60263036.png");
+    background-size: 10%;
+    transition: 2s;
+}
+.b13:hover{
+    transform: scale(50);
+}
+
+.b14{
+    transition: 0.5s;}
+.b14:hover{transform: scale(20);}
+
+.b16{
+    background-image: url("http://www.randommovement.org/wp-content/uploads/2019/03/pod110image-rotated-220x293.jpg");
+    background-repeat: no-repeat;
+    background-size:70%;
+    transition: 0.3s;
+    background-position:8px,10px;
+}
+
+.b16:hover{
+    transform: scale(7);
+}
+
+.b17{background-color: lightgreen}
+
+.b19{
+    text-align: center;
+    font-size:5px;
+    vertical-align: middle;
+    line-height: 45px;
+    display: inline;
+    background-color: rgb(241, 95, 95);
+}
+.b19:hover{transform:scale(30)}
+
+.b20{
+    background-image: url("https://img.freepik.com/free-vector/heart_53876-25531.jpg?size=338&ext=jpg");
+    background-repeat: no-repeat;
+    background-size:70%;
+    transition: 0.3s;
+    background-position:8px,10px;
+}
+
+.b20:hover{
+    transform: scale(20);
 }
