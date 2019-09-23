@@ -127,6 +127,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size:3.5px;
 }
+.b10:hover{transform:scale(40)}
 
 .b11{
     background-image: url("https://cdn.ebaumsworld.com/mediaFiles/picture/1035099/85708057.jpg");
