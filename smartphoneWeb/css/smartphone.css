@@ -10,7 +10,7 @@ body{
     background-color:rgb(251, 189, 253);
     margin:120px auto;
     border-radius: 3%;
-    transition-delay: 2s;
+    transition-delay: 1s;
 }
 
 .screen:hover{transform: scale(0.1)}
