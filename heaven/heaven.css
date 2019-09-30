@@ -1,0 +1,382 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyaVxnvxnGilUrXydI26bGBoouJ5oS3laJxbgiUz1LmlSOcTrSw");
+    background-size: 100%;    
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+.poseidon{
+    position: relative;
+    animation-name: poseidon;
+    animation-duration: 150s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes poseidon{
+    0%{top:0px;left: 10%;}
+    25%{top: 100px;;left: 40%;}
+    50%{top: 200px;left: 30%;}
+    75%{top: 10px;left: 70%;}
+    100%{top: 50px;left: 90%;}
+}
+
+.people1{
+    position: relative;
+    animation-name: people1;
+    animation-duration: 80s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people1{
+    0%{top:50px;left: 70%;}
+    25%{top: 150px;;left: 90%;}
+    50%{top: 50px;left: 10%;}
+    75%{top: 400px;left: 70%;}
+    100%{top: 500px;left: 20%;}
+}
+
+.people2{
+    position: relative;
+    animation-name: people2;
+    animation-duration: 100s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people2{
+    0%{top:150px;left: 0%;}
+    25%{top: 50px;;left: 20%;}
+    50%{top: 500px;left: 90%;}
+    75%{top: 400px;left: 80%;}
+    100%{top: 500px;left: 20%;}
+}
+
+.people3{
+    position: relative;
+    animation-name: people3;
+    animation-duration: 200s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people3{
+    0%{top: 50px;left: 40%;}
+    25%{top: 150px;;left: 20%;}
+    50%{top: 50px;left: 10%;}
+    75%{top: 400px;left: 10%;}
+    100%{top: 500px;left: 10%;}
+}
+
+.people4{
+    position: relative;
+    animation-name: people4;
+    animation-duration: 250s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people4{
+    0%{top: 50px;left: 0%;}
+    25%{top: 150px;;left: 0%;}
+    50%{top: 50px;left: 1%;}
+    75%{top: 400px;left: 10%;}
+    100%{top: 500px;left: 10%;}
+}
+
+
+.zeus{
+    position: relative;
+    animation-name: zeus;
+    animation-duration:180s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zeus{
+    0%{top:500px;left: 50%;}
+    25%{top: 250px;;left: 20%;}
+    50%{top: 110px;left: 40%;}
+    75%{top: 200px;left: 7%;}
+    100%{top: 300px;left: 30%;}
+}
+
+.hera{
+    position: relative;
+    animation-name: hera;
+    animation-duration: 80s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hera{
+    0%{top:23px;left: 10%;}
+    25%{top: 15px;;left: 34%;}
+    50%{top: 80px;left: 65%;}
+    75%{top: 128px;left: 56%;}
+    100%{top: 90px;left: 43%;}
+}
+
+.hades{
+    position: relative;
+    animation-name: hades;
+    animation-duration: 210s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hades{
+    0%{top:35px;left: 10%;}
+    25%{top: 215px;;left: 34%;}
+    50%{top: 150px;left: 65%;}
+    75%{top: 18px;left: 56%;}
+    100%{top: 9px;left: 43%;}
+}
+
+.Aphrodite{
+    position: relative;
+    animation-name: Aphrodite;
+    animation-duration: 800s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Aphrodite{
+    0%{top:315px;left: 100%;}
+    25%{top: 25px;;left: 3%;}
+    50%{top: 250px;left: 15%;}
+    75%{top: 8px;left: 20%;}
+    100%{top: 119px;left: 13%;}
+}
+.Apollo{
+    position: relative;
+    animation-name: Apollo;
+    animation-duration: 300s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Apollo{
+    0%{top:35px;left: 100%;}
+    25%{top: 125px;;left: 3%;}
+    50%{top: 50px;left: 15%;}
+    75%{top: 18px;left: 20%;}
+    100%{top: 19px;left: 13%;}
+}
+.Ares{
+    position: relative;
+    animation-name: Ares;
+    animation-duration: 500s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Ares{
+    0%{top:35px;left: 20%;}
+    25%{top: 125px;;left: 13%;}
+    50%{top: 50px;left: 153%;}
+    75%{top: 18px;left: 25%;}
+    100%{top: 19px;left: 53%;}
+}
+.Artemis{
+    position: relative;
+    animation-name: Artemis;
+    animation-duration: 350s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Artemis{
+    0%{top:35px;left:74%;}
+    25%{top: 25px;;left: 53%;}
+    50%{top: 150px;left: 15%;}
+    75%{top: 186px;left: 52%;}
+    100%{top: 190px;left: 13%;}
+}
+.Athena{
+    position: relative;
+    animation-name: Athena;
+    animation-duration: 600s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Athena{
+    0%{top:325px;left:4%;}
+    25%{top: 215px;;left: 3%;}
+    50%{top: 50px;left: 15%;}
+    75%{top: 86px;left: 52%;}
+    100%{top: 190px;left: 13%;}
+}
+.Hephaestus{
+    position: relative;
+    animation-name: Hephaestus;
+    animation-duration: 210s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Hephaestus{
+    0%{top:325px;left:45%;}
+    25%{top: 215px;;left: 53%;}
+    50%{top: 50px;left: 15%;}
+    75%{top: 86px;left: 5%;}
+    100%{top: 190px;left: 43%;}
+}
+
+.Hestia{
+    position: relative;
+    animation-name: Hestia;
+    animation-duration: 3100s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Hestia{
+    0%{top:325px;left:15%;}
+    25%{top: 215px;;left: 23%;}
+    50%{top: 50px;left: 100%;}
+    75%{top: 86px;left: 90%;}
+    100%{top: 190px;left: 3%;}
+}
+.Hermes{
+    position: relative;
+    animation-name: Hermes;
+    animation-duration: 900s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Hermes{
+    0%{top:400px;left:15%;}
+    25%{top: 105px;;left: 23%;}
+    50%{top: 90px;left: 100%;}
+    75%{top: 19px;left: 90%;}
+    100%{top: 10px;left: 3%;}
+}
+
+.Demeter{
+    position: relative;
+    animation-name: Demeter;
+    animation-duration: 500s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Demeter{
+    0%{top:60px;left:15%;}
+    25%{top: 405px;;left: 23%;}
+    50%{top: 220px;left: 100%;}
+    75%{top: 300px;left: 90%;}
+    100%{top: 280px;left: 3%;}
+}
+
+.Dionysus{
+    position: relative;
+    animation-name: Dionysus;
+    animation-duration: 290s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Dionysus{
+    0%{top:260px;left:50%;}
+    25%{top: 405px;;left: 40%;}
+    50%{top: 220px;left: 100%;}
+    75%{top: 300px;left: 90%;}
+    100%{top: 480px;left: 30%;}
+}
+
+.Achilles{
+    position: relative;
+    animation-name: Achilles;
+    animation-duration: 1000s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Achilles{
+    0%{top:820px;left:50%;}
+    25%{top: 305px;;left: 10%;}
+    50%{top: 620px;left: 20%;}
+    75%{top: 700px;left: 40%;}
+    100%{top: 480px;left: 30%;}
+}
+
+.Hercules{
+    position: relative;
+    animation-name: Hercules;
+    animation-duration: 380s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Hercules{
+    0%{top:20px;left:50%;}
+    25%{top: 35px;;left: 10%;}
+    50%{top: 62px;left: 20%;}
+    75%{top: 70px;left: 40%;}
+    100%{top: 40px;left: 30%;}
+}
+.Jason{
+    position: relative;
+    animation-name: Jason;
+    animation-duration: 450s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Jason{
+    0%{top:20px;left:10%;}
+    25%{top: 35px;;left: 20%;}
+    50%{top: 62px;left: 201%;}
+    75%{top: 70px;left: 140%;}
+    100%{top: 40px;left: 50%;}
+}
+.Odysseus{
+    position: relative;
+    animation-name: Odysseus;
+    animation-duration: 510s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Odysseus{
+    0%{top:201px;left:100%;}
+    25%{top: 354px;;left: 120%;}
+    50%{top: 624px;left: 21%;}
+    75%{top: 740px;left: 10%;}
+    100%{top: 440px;left: 50%;}
+}
+
+.Perseus{
+    position: relative;
+    animation-name: Perseus;
+    animation-duration: 750s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Perseus{
+    0%{top:2011px;left:100%;}
+    25%{top: 3114px;;left: 120%;}
+    50%{top: 64px;left: 21%;}
+    75%{top: 140px;left: 10%;}
+    100%{top: 1440px;left: 50%;}
+}
+.Theseus{
+    position: relative;
+    animation-name: Theseus;
+    animation-duration: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Theseus{
+    0%{top:411px;left:10%;}
+    25%{top: 114px;;left: 60%;}
+    50%{top: 564px;left: 29%;}
+    75%{top: 440px;left: 90%;}
+    100%{top: 144px;left: 40%;}
+}
