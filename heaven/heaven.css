@@ -368,7 +368,7 @@ body{
 .Theseus{
     position: relative;
     animation-name: Theseus;
-    animation-duration: 0s;
+    animation-duration: 120s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -379,4 +379,35 @@ body{
     50%{top: 564px;left: 29%;}
     75%{top: 440px;left: 90%;}
     100%{top: 144px;left: 40%;}
+}
+
+.people5{
+    position: relative;
+    animation-name: people5;
+    animation-duration:340s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people5{
+    0%{top:61px;left:10%;}
+    25%{top: 414px;;left: 50%;}
+    50%{top: 164px;left: 9%;}
+    75%{top: 240px;left: 50%;}
+    100%{top: 44px;left: 30%;}
+}
+.people6{
+    position: relative;
+    animation-name: people6;
+    animation-duration: 400s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes people6{
+    0%{top:89px;left:79%;}
+    25%{top: 514px;;left: 78%;}
+    50%{top: 34px;left: 61%;}
+    75%{top: 40px;left: 42%;}
+    100%{top: 1114px;left: 20%;}
 }
