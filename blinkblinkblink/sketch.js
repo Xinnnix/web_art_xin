@@ -21,6 +21,28 @@ function setup() {
     
     push();
     noStroke();
+    fill(random(255),random(255),random(255));
+    circle(width-40,40,random(0,300));
+    pop();
+    push();
+    noStroke();
+    fill(random(255),random(255),random(255));
+    circle(40,height-40,random(0,300));
+    pop();
+    push();
+    noStroke();
+    fill(random(255),random(255),random(255));
+    circle(width-40,height-40,random(0,300));
+    pop();
+
+    push();
+    noStroke();
+    fill(random(255),random(255),random(255));
+    circle(40,40,random(0,300));
+    pop();
+
+    push();
+    noStroke();
     fill(random(255));
     rect(0,0,20,height);
     rect(width-20,0,20,height);
@@ -36,6 +58,9 @@ function setup() {
     rect(20,20,20,height-40);
     rect(width-40,20,20,height-40);
     pop();
+
+    
+
     
     
   
