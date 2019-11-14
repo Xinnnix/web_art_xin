@@ -64,21 +64,14 @@ function draw(){
 
   background(0);
   image(video,0,0);
-  // fill(255);
-  // textSize(20);
-  // text(label, 10, height-20);
+  fill(255);
+  textSize(20);
+  text(label, 10, height-20);
   if ((label == 'helloStranger')&&(n<20)){
     fill(random(255),random(255),random(255));
     circle(100,height-20, 20);
-    n+1;
-  
+    n+=1;
   }
-  else if((label == 'whistle')&&(n>=20)){
-    // background(0);
-    //image(video,0,0);
-    fill(255);
-    textSize(20);
-    text(label, 10, height-20);
-  }
+
 
 }
