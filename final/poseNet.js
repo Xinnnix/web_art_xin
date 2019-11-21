@@ -1,6 +1,7 @@
 let video;
 let poseNet;
 let poses = [];
+let source;
 
 
 
@@ -75,10 +76,32 @@ function drawKeypoints()  {
       line(keypoint1.position.x+width/20,keypoint1.position.y,keypoint2.position.x-width/20,keypoint2.position.y);
       line(keypoint0.position.x,keypoint0.position.y,leftWrist.position.x,leftWrist.position.y);
       line(keypoint0.position.x,keypoint0.position.y,rightWrist.position.x,rightWrist.position.y);
+      addToSource(leftWrist);
+      addToSource(rightWrist);
 
 
   }
 }
+
+
+
+function addToSource(data){
+  this.s = data;
+  source.push(s);
+
+}
+
+function
+
+
+
+
+
+
+
+
+
+
 
 // A function to draw ellipses over the detected keypoints
 // function drawKeypoints()  {
