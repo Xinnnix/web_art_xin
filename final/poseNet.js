@@ -22,7 +22,7 @@ function setup() {
 
 
 
-  }
+
 }
 
 function modelReady() {
@@ -76,8 +76,8 @@ function drawKeypoints()  {
       line(keypoint1.position.x+width/20,keypoint1.position.y,keypoint2.position.x-width/20,keypoint2.position.y);
       line(keypoint0.position.x,keypoint0.position.y,leftWrist.position.x,leftWrist.position.y);
       line(keypoint0.position.x,keypoint0.position.y,rightWrist.position.x,rightWrist.position.y);
-      addToSource(leftWrist);
-      addToSource(rightWrist);
+      // addToSource(leftWrist);
+      // addToSource(rightWrist);
 
 
   }
@@ -85,13 +85,12 @@ function drawKeypoints()  {
 
 
 
-function addToSource(data){
-  this.s = data;
-  source.push(s);
+// function addToSource(data){
+//   source.push(data);
+//
+// }
 
-}
-
-function
+//function
 
 
 
