@@ -1,7 +1,9 @@
 var inc = 0.05;
-var scl = 10;
+var scl = 5;
 var cols, rows;
-var zoff = 0;
+//var zoff = mouseX;
+var startTime = 0;
+
 
 var particles = [];
 
@@ -17,15 +19,23 @@ function setup() {
   cols = floor(width / scl);
   rows = floor(height / scl);
 
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < 5000; i++) {
     particles[i] = new Particle();
   }
   flowfield = new Array(cols * rows);
 
+
 }
 
 function draw() {
+
+  let zoff = map(mouseX, 0, 600, 0, 1);
+  //mouseX triggers spreading;
+  //background(255);
+
+
   //noStroke();
+
   var yoff = 0;
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
@@ -42,14 +52,14 @@ function draw() {
       // translate(x * scl, y * scl);
       // rotate(v.heading());
       // strokeWeight(1);
-      // //line(0, 0, scl, 0);
+      // line(0, 0, scl, 0);
       // pop();
       //fill(random(255));
       //fill(r);
       //rect(x * scl, y * scl, scl, scl);
     }
-    yoff += inc;
-    zoff += 0.0005;
+    //yoff += inc;
+    //zoff += 0.00001;
 
   }
   for (var i = 0; i < particles.length; i++) {
@@ -58,14 +68,23 @@ function draw() {
     particles[i].edge();
     particles[i].show();
   }
+  var endTime = millis();
+  var lifeSpan = endTime - startTime;
+  if (lifeSpan > 1000 * 15) {
+    // clear screen every 15 seconds;
+    clear();
+    startTime = endTime;
+  }
+
+
 }
 
 
 function Particle() {
-  this.pos = createVector(random(width), random(height));
+  this.pos = createVector(random(width), 0);
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
-  this.maxSpeed = 1;
+  this.maxSpeed = 3;
   this.previousPos = this.pos.copy();
 
   this.update = function() {
@@ -78,8 +97,7 @@ function Particle() {
     this.acc.add(force);
   }
   this.show = function() {
-
-    stroke(0, 1);
+    stroke(0, 5);
     strokeWeight(1);
     line(this.pos.x, this.pos.y, this.previousPos.x, this.previousPos.y);
     this.updatePrev();
