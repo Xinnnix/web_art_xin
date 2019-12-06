@@ -1,7 +1,6 @@
 let particles = [];
 
 
-
 function setup() {
   createCanvas(600, 400);
   for (var i = 0; i < 10; i++) {
@@ -11,18 +10,38 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(0); //stroke(random(255),random(255),random(255),random(1,4));
+
+  connect();
+
 
   for (var i = 0; i < particles.length; i++) {
+    if (particles.length > 15) {
 
-    particles[i].randomMove();
-    particles[i].update();
-    particles[i].edge();
-    //particles[i].show();
+      particles[i].randomMove();
+      particles[i].update();
+      particles[i].edge2();
+      //particles[i].show();
+      connect();
+    } else if (particles.length < 20) {
+      particles[i].randomMove();
+      particles[i].update();
+      particles[i].edge();
+      connect();
+    } else if (particles.length > 20) {
+      particles[i].randomMove();
+      particles[i].update();
+      particles[i].edge2();
+      connect();
+    } else if (particles.length <= 15) {
+      particles[i].randomMove();
+      particles[i].update();
+      particles[i].edge();
+      connect();
+    }
 
 
   }
-  connect();
 
 }
 
@@ -39,7 +58,8 @@ function Particle() {
   }
 
   this.show = function() {
-    stroke(random(255), 255, 255, 10);
+
+    //stroke(random(255), 255, 255, 10);
   }
 
   this.randomMove = function() {
@@ -48,9 +68,10 @@ function Particle() {
   }
 
   this.addNew = function() {
-    if (particles.length < 50) {
+    if (particles.length < 20) {
       var added = new Particle();
       particles.push(added);
+      stroke(random(255), random(255), random(255), random(1, 4));
     }
   }
 
@@ -87,13 +108,56 @@ function Particle() {
 
   }
 
+  this.killOld = function() {
+    if (particles.length > 15) {
+      particles.shift();
+    }
+  }
+
+  this.edge2 = function() {
+    if (this.pos.x > width) {
+      this.pos.x = width;
+      this.vel.mult(-1);
+      this.acc.mult(-1);
+      this.killOld();
+
+    }
+    if (this.pos.x < 0) {
+      this.pos.x = 0;
+      this.vel.mult(-1);
+      this.acc.mult(-1);
+
+      this.killOld();
+    }
+    if (this.pos.y > height) {
+      this.pos.y = height;
+      this.vel.mult(-1);
+      this.acc.mult(-1);
+
+
+      this.killOld();
+    }
+    if (this.pos.y < 0) {
+      this.pos.y = 0;
+      this.vel.mult(-1);
+      this.acc.mult(-1);
+
+      this.killOld();
+    }
+
+  }
+
 }
 
 function connect() {
   for (var i = 0; i < particles.length; i++) {
     for (var j = 0; j < particles.length; j++) {
-      stroke(random(255), 255, 255, 10);
+      //stroke(random(255), 255, 255, 10);
+      //stroke(random(255),random(255),random(255),random(1,20));
+
       line(particles[i].pos.x, particles[i].pos.y, particles[j].pos.x, particles[j].pos.y);
+
+
     }
   }
 }
