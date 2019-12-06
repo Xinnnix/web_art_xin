@@ -1,11 +1,11 @@
-var inc = 0.05;
-var scl = 5;
-var cols, rows;
+var inc2 = 0.05;
+var scl2 = 5;
+var cols2, rows2;
 //var zoff = mouseX;
 var startTime = 0;
 
 
-var particles = [];
+var particles2 = [];
 
 var flowfield;
 
@@ -16,37 +16,37 @@ var flowfield;
 function setup() {
   createCanvas(600, 400);
   background(255);
-  cols = floor(width / scl);
-  rows = floor(height / scl);
+  cols2 = floor(width / scl2);
+  rows2 = floor(height / scl2);
 
   for (var i = 0; i < 5000; i++) {
-    particles[i] = new Particle();
+    particles2[i] = new Particle2();
   }
-  flowfield = new Array(cols * rows);
+  flowfield = new Array(cols2 * rows2);
 
 
 }
 
 function draw() {
 
-  let zoff = map(mouseX, 0, 600, 0, 1);
+  let zoff2 = map(mouseX, 0, width, 0, 1);
   //mouseX triggers spreading;
   //background(255);
 
 
   //noStroke();
 
-  var yoff = 0;
-  for (var y = 0; y < rows; y++) {
-    var xoff = 0;
-    for (var x = 0; x < cols; x++) {
-      var angle = noise(xoff, yoff, zoff) * TWO_PI * 5;
-      var index = x + y * cols;
+  var yoff2 = 0;
+  for (var y = 0; y < rows2; y++) {
+    var xoff2 = 0;
+    for (var x = 0; x < cols2; x++) {
+      var angle = noise(xoff2, yoff2, zoff2) * TWO_PI * 5;
+      var index = x + y * cols2;
 
       var v = p5.Vector.fromAngle(angle);
       v.setMag(1);
       flowfield[index] = v;
-      xoff += inc;
+      xoff2 += inc2;
 
       // push();
       // translate(x * scl, y * scl);
@@ -58,15 +58,15 @@ function draw() {
       //fill(r);
       //rect(x * scl, y * scl, scl, scl);
     }
-    yoff += inc;
+    yoff2 += inc2;
     //zoff += 0.00001;
 
   }
-  for (var i = 0; i < particles.length; i++) {
-    particles[i].follow(flowfield);
-    particles[i].update();
-    particles[i].edge();
-    particles[i].show();
+  for (var i = 0; i < particles2.length; i++) {
+    particles2[i].follow(flowfield);
+    particles2[i].update();
+    particles2[i].edge();
+    particles2[i].show();
   }
   var endTime = millis();
   var lifeSpan = endTime - startTime;
@@ -80,7 +80,7 @@ function draw() {
 }
 
 
-function Particle() {
+function Particle2() {
   this.pos = createVector(random(width), 0);
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
@@ -121,9 +121,9 @@ function Particle() {
     }
   }
   this.follow = function(dir) {
-    var x = floor(this.pos.x / scl);
-    var y = floor(this.pos.y / scl);
-    var index = x + y * cols;
+    var x = floor(this.pos.x / scl2);
+    var y = floor(this.pos.y / scl2);
+    var index = x + y * cols2;
     var force = flowfield[index];
     this.applyForce(force);
   }

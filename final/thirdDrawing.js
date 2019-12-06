@@ -3,6 +3,8 @@ let particles = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  stroke(90, 200, 190, 4);
+
   for (var i = 0; i < 10; i++) {
     particles[i] = new Particle();
   }
