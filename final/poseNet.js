@@ -15,7 +15,7 @@ function setup() {
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on('pose', function(results) {
     poses = results;
-    //console.log(results);
+    console.log(results);
   });
   video.hide();
 
@@ -36,48 +36,48 @@ function draw() {
   // drawSkeleton();
 }
 
-function drawKeypoints()  {
+function drawKeypoints() {
   for (let i = 0; i < poses.length; i++) {
     let pose = poses[i].pose;
-      let keypoint0 = pose.keypoints[0];
-      if (keypoint0.score > 0.2){
-        fill(255, 0, 0);
-        noStroke();
-        ellipse(keypoint0.position.x, keypoint0.position.y, 1, 1);
-      }
-      let keypoint1 = pose.keypoints[1];
-      if (keypoint1.score > 0.2){
-        fill(255);
-        noStroke();
-        rect(keypoint1.position.x, keypoint1.position.y, 10, 10);
-      }
-      let keypoint2 = pose.keypoints[2];
-      if (keypoint2.score > 0.2){
-        fill(255);
-        noStroke();
-        rect(keypoint2.position.x, keypoint2.position.y, 10, 10);
-      }
-      let leftWrist = pose.keypoints[9];
-      if (leftWrist.score > 0.2){
-        fill(255, 0, 0);
-        noStroke();
-        ellipse(leftWrist.position.x, leftWrist.position.y, 1, 1);
-      }
-      let rightWrist = pose.keypoints[10];
-      if (rightWrist.score > 0.2){
-        fill(255, 0, 0);
-        noStroke();
-        ellipse(rightWrist.position.x, rightWrist.position.y, 1, 1);
-      }
+    let keypoint0 = pose.keypoints[0];
+    if (keypoint0.score > 0.2) {
+      fill(255, 0, 0);
+      noStroke();
+      ellipse(keypoint0.position.x, keypoint0.position.y, 1, 1);
+    }
+    let keypoint1 = pose.keypoints[1];
+    if (keypoint1.score > 0.2) {
+      fill(255);
+      noStroke();
+      rect(keypoint1.position.x, keypoint1.position.y, 10, 10);
+    }
+    let keypoint2 = pose.keypoints[2];
+    if (keypoint2.score > 0.2) {
+      fill(255);
+      noStroke();
+      rect(keypoint2.position.x, keypoint2.position.y, 10, 10);
+    }
+    let leftWrist = pose.keypoints[9];
+    if (leftWrist.score > 0.2) {
+      fill(255, 0, 0);
+      noStroke();
+      ellipse(leftWrist.position.x, leftWrist.position.y, 1, 1);
+    }
+    let rightWrist = pose.keypoints[10];
+    if (rightWrist.score > 0.2) {
+      fill(255, 0, 0);
+      noStroke();
+      ellipse(rightWrist.position.x, rightWrist.position.y, 1, 1);
+    }
 
-      stroke(random(255),random(255),random(255));
-      line(keypoint0.position.x,keypoint0.position.y,keypoint1.position.x+width/20,keypoint1.position.y);
-      line(keypoint0.position.x,keypoint0.position.y,keypoint2.position.x-width/20,keypoint2.position.y);
-      line(keypoint1.position.x+width/20,keypoint1.position.y,keypoint2.position.x-width/20,keypoint2.position.y);
-      line(keypoint0.position.x,keypoint0.position.y,leftWrist.position.x,leftWrist.position.y);
-      line(keypoint0.position.x,keypoint0.position.y,rightWrist.position.x,rightWrist.position.y);
-      // addToSource(leftWrist);
-      // addToSource(rightWrist);
+    stroke(random(255), random(255), random(255));
+    line(keypoint0.position.x, keypoint0.position.y, keypoint1.position.x + width / 20, keypoint1.position.y);
+    line(keypoint0.position.x, keypoint0.position.y, keypoint2.position.x - width / 20, keypoint2.position.y);
+    line(keypoint1.position.x + width / 20, keypoint1.position.y, keypoint2.position.x - width / 20, keypoint2.position.y);
+    line(keypoint0.position.x, keypoint0.position.y, leftWrist.position.x, leftWrist.position.y);
+    line(keypoint0.position.x, keypoint0.position.y, rightWrist.position.x, rightWrist.position.y);
+    // addToSource(leftWrist);
+    // addToSource(rightWrist);
 
 
   }
@@ -91,8 +91,6 @@ function drawKeypoints()  {
 // }
 
 //function
-
-
 
 
 

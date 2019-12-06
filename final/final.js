@@ -34,17 +34,21 @@ function draw() {
   for (let i = 0; i < poses.length; i++) {
     let pose = poses[i].pose;
 
-// this is a test block
-  let nose = pose.keypoints[0];
-  let noseX = nose.position.x;
-  let noseY = nose.position.y;
-  if (noseY > windowWidth/2){
-    background(255);
-  } else{background(0);}
-}
+    let nose = pose.keypoints[0];
+    let noseX = nose.position.x;
+    let noseY = nose.position.y;
+    let leftWrist = pose.keypoints[9];
+    let leftWristX = leftWrist.position.x;
+    let leftWristY = leftWrist.position.y;
+    if (leftWristY < noseY) {
+      background(random(255));
+      drawHeart(tempPosX, tempPosY);
+    } else {
+      background(0);
+    }
 
-// this is the end of the test block
-// and it works. I can actually use the position from poseNet to change my p5 drawing.
+  }
+
 
 
   //background(random(255));
@@ -58,7 +62,7 @@ function draw() {
       rect(x * scl, y * scl, scl, scl);
     }
   }
-  drawHeart(tempPosX, tempPosY);
+  //drawHeart(tempPosX, tempPosY);
 
 
 }
