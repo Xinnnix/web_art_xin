@@ -2,7 +2,7 @@ let particles = [];
 
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(windowWidth, windowHeight);
   for (var i = 0; i < 10; i++) {
     particles[i] = new Particle();
   }
@@ -160,4 +160,15 @@ function connect() {
 
     }
   }
+}
+
+function mousePressed() {
+  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+  }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
