@@ -58,7 +58,7 @@ function draw() {
       //fill(r);
       //rect(x * scl, y * scl, scl, scl);
     }
-    //yoff += inc;
+    yoff += inc;
     //zoff += 0.00001;
 
   }
