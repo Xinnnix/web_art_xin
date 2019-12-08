@@ -1,3 +1,6 @@
+//TODO: change the mouseX from the second drawing. Add leftWristX or rightWristX
+//to it and map it to the orginal mouseX to change the zoff of the secondDrawing
+
 let video;
 let poseNet;
 let poses = [];
