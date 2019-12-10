@@ -1,6 +1,9 @@
 //TODO: change the mouseX from the second drawing. Add leftWristX or rightWristX
 //to it and map it to the orginal mouseX to change the zoff of the secondDrawing
 
+//TODO: fix the adding and deleting conditions. Might change to a fixed number
+//to avoid the random change.
+
 let video;
 let poseNet;
 let poses = [];
@@ -52,7 +55,7 @@ function setup() {
   cols2 = floor(width / scl2);
   rows2 = floor(height / scl2);
 
-  for (var i = 0; i < 5000; i++) {
+  for (var i = 0; i < 100; i++) {
     particles2[i] = new Particle2();
   }
   flowfield = new Array(cols2 * rows2);
@@ -79,7 +82,7 @@ function draw() {
         drawHeart(tempPosX, tempPosY);
       } else {
         background(255);
-        drawSecondDrawing();
+        drawSecondDrawing(leftWristX);
 
       }
     }
@@ -95,15 +98,15 @@ function draw() {
 //background(random(255));
 
 //draw background grid;
-for (var y = 0; y < rows; y++) {
-  var xoff = 0;
-  for (var x = 0; x < cols; x++) {
-    noFill();
-    noStroke();
-    rect(x * scl, y * scl, scl, scl);
-  }
-}
-//drawHeart(tempPosX, tempPosY);
+// for (var y = 0; y < rows; y++) {
+//   var xoff = 0;
+//   for (var x = 0; x < cols; x++) {
+//     noFill();
+//     noStroke();
+//     rect(x * scl, y * scl, scl, scl);
+//   }
+// }
+// //drawHeart(tempPosX, tempPosY);
 
 
 
@@ -339,9 +342,9 @@ function connect() {
   }
 }
 
-function drawSecondDrawing() {
+function drawSecondDrawing(_leftWristX) {
 
-  let zoff2 = map(mouseX, 0, width, 0, 1);
+  let zoff2 = map(_leftWristX, 0, width, 0, 1);
   //mouseX triggers spreading;
   //background(255);
 
