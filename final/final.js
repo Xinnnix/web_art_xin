@@ -232,7 +232,7 @@ function drawThirdDrawing() {
 }
 
 function Particle3() {
-  this.pos = createVector(random(width), random(height));
+  this.pos = createVector(random(width), 0);
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
   this.maxSpeed = 10;
