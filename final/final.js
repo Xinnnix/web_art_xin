@@ -53,8 +53,8 @@ function setup() {
   video.hide();
 
   //secondDrawing
-  cols2 = floor(width / scl2);
-  rows2 = floor(height / scl2);
+  cols2 = floor(windowWidth / scl2);
+  rows2 = floor(windowHeight / scl2);
 
   for (var i = 0; i < 5000; i++) {
     particles2[i] = new Particle2();
