@@ -55,7 +55,7 @@ function setup() {
   cols2 = floor(width / scl2);
   rows2 = floor(height / scl2);
 
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 5000; i++) {
     particles2[i] = new Particle2();
   }
   flowfield = new Array(cols2 * rows2);
@@ -81,7 +81,7 @@ function draw() {
         background(random(255));
         drawHeart(tempPosX, tempPosY);
       } else {
-        background(255);
+        //background(120, 0, 0);
         drawSecondDrawing(leftWristX);
 
       }
