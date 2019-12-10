@@ -12,8 +12,8 @@ var scl = 20;
 var cols, rows;
 let tempPosX, tempPosY;
 let particles3 = [];
-var inc2 = 0.005;
-var scl2 = 20;
+var inc2 = 0.05;
+var scl2 = 10;
 var cols2, rows2;
 //var zoff = mouseX;
 var startTime = 0;
@@ -232,7 +232,7 @@ function drawThirdDrawing() {
 }
 
 function Particle3() {
-  this.pos = createVector(random(width), 0);
+  this.pos = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
   this.maxSpeed = 10;
