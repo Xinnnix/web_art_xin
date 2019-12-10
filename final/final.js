@@ -56,7 +56,7 @@ function setup() {
   cols2 = floor(windowWidth / scl2);
   rows2 = floor(windowHeight / scl2);
 
-  for (var i = 0; i < 5000; i++) {
+  for (var i = 0; i < 10000; i++) {
     particles2[i] = new Particle2();
   }
   flowfield = new Array(cols2 * rows2);
