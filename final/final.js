@@ -17,6 +17,7 @@ var scl2 = 5;
 var cols2, rows2;
 //var zoff = mouseX;
 var startTime = 0;
+var backgroundCounter = 0;
 
 
 var particles2 = [];
@@ -76,12 +77,17 @@ function draw() {
       let leftWristX = leftWrist.position.x;
       let leftWristY = leftWrist.position.y;
 
-
+      // when wrist is below nose...
       if (leftWristY > noseY) {
         background(random(255));
         drawHeart(tempPosX, tempPosY);
+        backgroundCounter = 0;
+        // when wrist is above nose...
       } else {
-        //background(120, 0, 0);
+        if (backgroundCounter < 1) {
+          background(255);
+        }
+        backgroundCounter++;
         drawSecondDrawing(leftWristX);
 
       }
