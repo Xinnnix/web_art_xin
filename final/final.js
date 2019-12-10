@@ -192,6 +192,8 @@ function windowResized() {
   rows = floor(windowHeight / scl);
   tempPosX = cols / 2 - 10;
   tempPosY = rows / 2 - 10;
+  cols2 = floor(windowWidth / scl2);
+  rows2 = floor(windowHeight / scl2);
 }
 
 function drawThirdDrawing() {
