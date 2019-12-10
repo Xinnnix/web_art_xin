@@ -235,7 +235,7 @@ function Particle3() {
   this.pos = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
-  this.maxSpeed = 1;
+  this.maxSpeed = 10;
 
   this.update = function() {
     this.pos.add(this.vel);
