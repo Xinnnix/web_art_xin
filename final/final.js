@@ -13,7 +13,7 @@ var cols, rows;
 let tempPosX, tempPosY;
 let particles3 = [];
 var inc2 = 0.05;
-var scl2 = 10;
+var scl2 = 5;
 var cols2, rows2;
 //var zoff = mouseX;
 var startTime = 0;
@@ -235,7 +235,7 @@ function Particle3() {
   this.pos = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
-  this.maxSpeed = 10;
+  this.maxSpeed = 1;
 
   this.update = function() {
     this.pos.add(this.vel);
@@ -404,7 +404,7 @@ function Particle2() {
   this.pos = createVector(random(width), 0);
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
-  this.maxSpeed = 3;
+  this.maxSpeed = 30;
   this.previousPos = this.pos.copy();
 
   this.update = function() {
