@@ -401,10 +401,10 @@ function drawSecondDrawing(_leftWristX) {
 }
 
 function Particle2() {
-  this.pos = createVector(random(width), 0);
+  this.pos = createVector(random(width), height);
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
-  this.maxSpeed = 30;
+  this.maxSpeed = 3;
   this.previousPos = this.pos.copy();
 
   this.update = function() {
